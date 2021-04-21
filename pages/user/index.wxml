@@ -1,0 +1,14 @@
+<!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view class="user_info_wrap">
+    <view class="user_img_wrap">
+        <image class="user_bg" src=""></image>
+        <view class="user_info">
+            <image class="user_icon"></image>
+            <view class="user_name"></view>
+        </view>
+    </view>
+</view>
